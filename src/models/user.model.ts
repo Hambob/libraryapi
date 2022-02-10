@@ -44,12 +44,6 @@ export class User extends Entity {
   @property({
     type: 'string',
     required: true,
-  })
-  username: string;
-
-  @property({
-    type: 'string',
-    required: true,
     mongodb: {
       dataLength: 100,
     },
@@ -67,18 +61,18 @@ export class User extends Entity {
 
   @hasMany(() => Book, {through: {model: () => BookLog}})
   booksThr: Book[];
-  @property({
-    type: 'number',
-    required: true,
-    index: {
-      unique: true,
-    },
-    jsonSchema: {
-      maxLength: 10,
-      minLength: 10,
-    },
-  })
-  phone: number;
+  // @property({
+  //   type: 'number',
+  //   required: true,
+  //   index: {
+  //     unique: true,
+  //   },
+  //   jsonSchema: {
+  //     maxLength: 10,
+  //     minLength: 10,
+  //   },
+  // })
+  // phone: number;
 
   @property({
     type: 'boolean',

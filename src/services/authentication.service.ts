@@ -60,7 +60,7 @@ export class AuthService implements UserService<User, Credentials> {
 
     const invalidCredentialsError = 'Invalid email or password.';
     const foundUser = await this.userRepository.findOne({
-      where: {or: [{email: credentials.email}, {phone: credentials.phone}]},
+      where: {or: [{email: credentials.email}]},
     });
 
     console.log('foundUser', foundUser);

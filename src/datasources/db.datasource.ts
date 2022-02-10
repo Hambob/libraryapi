@@ -4,12 +4,12 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'db',
   connector: 'mysql',
-  url: '',
-  host: 'localhost',
+  url: 'mysql://u9gpfpwuw10u7mlt:JJt7zey5gxXXWGSN2HbH@bpzy7qqzxnyicvykextz-mysql.services.clever-cloud.com:3306/bpzy7qqzxnyicvykextz',
+  host: 'bpzy7qqzxnyicvykextz-mysql.services.clever-cloud.com',
   port: 3306,
-  user: 'root',
-  password: '',
-  database: 'library'
+  user: 'u9gpfpwuw10u7mlt',
+  password: 'JJt7zey5gxXXWGSN2HbH',
+  database: 'bpzy7qqzxnyicvykextz'
 };
 
 // Observe application's life cycle to disconnect the datasource when
