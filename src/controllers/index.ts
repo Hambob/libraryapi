@@ -6,3 +6,4 @@ export * from './book-log.controller';
 export * from './user-book.controller';
 export * from './category-book.controller';
 export * from './book-category.controller';
+export * from './book-user.controller';
